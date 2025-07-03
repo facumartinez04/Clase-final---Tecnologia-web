@@ -379,11 +379,44 @@ form button:hover{
   .contacto h1{
       font-size: 0.6em;
   }
+  
 
-  #email{
+  .form-input input{
     width: 100%;
+
   }
 
+  
+  .form-input{
+      display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 20px;
+    margin-left: -10px;
+    width: 130%;
+  }
+.form-input-email{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin: 20px;
+  margin-left: -10px;
+  width: 130%;
+}
+
+  .contacto form{
+    width: 80%;
+  }
+
+  .form-input-email{
+    justify-content: center;
+  }
+
+    .form-input-message{
+      justify-content: start;
+      margin: 20px;
+      margin-left: -10px;
+  }
 
   nav {
     position: fixed;
