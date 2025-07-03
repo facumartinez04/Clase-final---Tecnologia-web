@@ -399,6 +399,13 @@ form button:hover{
   }
 
 
+  .redes a i{
+      color: #fff;
+      font-size: 27px;
+      margin: 15px;
+  }
+
+
 /* SECTORES */
 
 .cartaSectores {
