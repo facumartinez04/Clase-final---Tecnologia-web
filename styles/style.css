@@ -4,10 +4,31 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Arial', sans-serif;
   background: #fff;
   color: #fff;
+}
+
+.chat-soporte{
+  position: fixed;
+  top: 98%;
+  left: 98%;
+  transform: translate(-98%,-98%);
+  cursor: pointer;
+}
+
+.chat-soporte i{
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+.chat-soporte i:hover{
+    background-color: #fff;
+    color: #0a1c63;
 }
 
 /* MENU DESPLEGABLE */
@@ -393,13 +414,6 @@ form button:hover{
   }
 
   .redes a{
-      color: #fff;
-      font-size: 27px;
-      margin: 15px;
-  }
-
-
-  .redes a i{
       color: #fff;
       font-size: 27px;
       margin: 15px;
