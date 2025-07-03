@@ -369,6 +369,36 @@ form button:hover{
   resize: none;
 }
 
+.informacion-global{
+    display: flex;
+    font-size: 0.3em;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .informacion-global p{
+     margin: 10px;
+  }
+
+
+  .redes{
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     top: 55%;
+     left: 98%;
+     transform: translate(-98%,-55%);
+  }
+
+  .redes a{
+      color: #fff;
+      font-size: 27px;
+      margin: 15px;
+  }
+
+
 /* SECTORES */
 
 .cartaSectores {
@@ -452,6 +482,12 @@ form button:hover{
     display: block;
   }
 
+  
+  .informacion-global {
+      text-align: center;
+      justify-content: center;
+  }
+
   .contacto h1{
       font-size: 0.6em;
   }
@@ -461,6 +497,24 @@ form button:hover{
     width: 100%;
 
   }
+
+  .redes{
+    position:relative;
+    display: flex; 
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    transform: translate(0,0);
+  }
+
+
+  .redes a{
+    margin: 10px;
+    font-size: 20px;
+  }
+
+
+
 
   
   .form-input{
