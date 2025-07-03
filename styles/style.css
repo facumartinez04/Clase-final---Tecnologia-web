@@ -352,6 +352,17 @@ form button:hover{
 }
 
 
+.error-msg {
+  color: red;
+  font-size: 0.3em;
+  margin-top: 5px;
+  display: block;
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
 .form-input-email{
   display: flex;
   flex-direction: column;
