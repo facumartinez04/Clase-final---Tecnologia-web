@@ -20,3 +20,13 @@ links.forEach(link => {
     closeIcon.style.display = 'none';
   });
 });
+
+
+/* SECTORES CASCADA */
+
+document.querySelectorAll('.faq-pregunta').forEach(button => {
+  button.addEventListener('click', () => {
+    const respuesta = button.nextElementSibling;
+    respuesta.style.display = respuesta.style.display === 'block' ? 'none' : 'block';
+  });
+});

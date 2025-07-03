@@ -369,6 +369,82 @@ form button:hover{
   resize: none;
 }
 
+/* SECTORES */
+
+.cartaSectores {
+  position: relative;
+  background-color: #f2f2f2;
+  color: #0a1c63;
+  padding: 20px;
+  width: 320px;
+  height: auto;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+
+.cartaSectores::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 320px;
+  height: 100%;
+  background-color: transparent;
+  border: 5px solid #f2f2f2;
+  z-index: -4;
+}
+
+.cartaSectores h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cartaSectores p{
+  font-size: 1.2em;
+  line-height: 2;
+  color: #333;
+}
+
+
+.faq {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0a1c63;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-pregunta {
+  width: 100%;
+  text-align: left;
+  background-color: #f5f5f5;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #0a1c63;
+}
+
+.faq-respuesta {
+  display: none;
+  padding: 15px;
+  background-color: white;
+  color: #333;
+  font-size: 15px;
+}
 
 
 @media (max-width: 768px) {
