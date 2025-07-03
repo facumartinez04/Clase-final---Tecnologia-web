@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  color: #fff;
+}
+
+/* MENU DESPLEGABLE */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-weight: bold;
+  color: #0a1c63;
+  padding: 15px;
+  border: 2px solid #0a1c63;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #0a1c63;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e37680;
+  transition: color 0.3s ease;
+}
+
+nav a.activo {
+  color: #e37680;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: #0a1c63;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#close-icon{
+  color: #fff;
+}
+
+
+
+
+
+/* CUERPO RESPONSIVE */
+
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.inicio-img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.caja-texto{
+  width: 40%;
+  margin: 100px;
+  margin-top: -250px;
+  margin-right: 5%;
+  align-self: end;
+}
+
+.caja-texto h1{
+  font-size: 4em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.caja-texto-informacion{
+  padding: 40px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  color: #0a1c63;
+}
+
+.caja-info-lineas{
+  display: flex;
+}
+
+.linea-hr {
+  border: none;
+  border-top: 2px solid #0a1c63;
+  margin: 20px 5px;
+  width: 200px; 
+}
+
+.caja-texto-informacion p {
+  font-size: 1em;
+  line-height: 2;
+  color: #333;
+  text-align: justify;  
+  max-width: 400px;           
+  margin: 0 auto;            
+}
+
+
+.boton-mas-info {
+  display: flex;
+  width: auto;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  justify-self: end;
+  border: none;
+  overflow: hidden;
+}
+
+.boton-mas-info .icono {
+  background-color: #0a1c63;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.boton-mas-info .texto {
+  background-color: #d80000;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.boton-mas-info .texto:hover {
+  background-color: #8d0000;
+}
+
+
+/* SECCION NOSOTROS */
+
+
+.contenidoAzul{
+  background-color: #0a1c63;
+  height: auto;
+  width: 100%;
+  z-index: -1;
+  padding-bottom: 150px;
+}
+
+.contenidoAzul h1 {
+  color: #fff;
+  padding: 30px;
+  font-size: 3em;
+}
+
+.contenidoAzul p {
+  color: #fff;
+  padding: 0 30px;
+  font-size: 1.2em;
+  margin: 10px;
+  line-height: 1.0cm;
+  font-weight: 300;
+  text-align: justify;
+}
+
+#listacartas{
+  display: flex;
+  justify-self: center;
+  padding-bottom: 50px;
+}
+
+.cartas{
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: -80px;
+  color: #1c2767;
+
+}
+
+
+.carta {
+  position: relative;
+  background-color: #f2f2f2;
+  color: #0a1c63;
+  padding: 20px;
+  width: 320px;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.carta::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 320px;
+  height: 100%;
+  background-color: transparent;
+  border: 5px solid #f2f2f2;
+  z-index: -4;
+}
+
+.carta h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.carta p{
+  font-size: 1.2em;
+  line-height: 2;
+  color: #333;
+}
+
+.servicios-intro{
+  max-width: 60%;
+}
+
+
+
+/* CONTACTO */
+
+#cuerpoContacto{
+
+  background-color: #0a1c63;
+}
+
+.contacto{
+  height: 100vh;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3em;
+}
+
+.contacto form{
+  padding: 20px;
+}
+
+.grupo-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.form-input label{
+    font-size: 0.4em;
+    margin: 10px 0;
+}
+
+.form-input input{
+    height: 30px;
+    width: 400px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+  
+}
+
+form button{
+    background-color: transparent;
+    border: 0px solid transparent;
+    width: 98%;
+    text-align: center;
+    color: #fff;
+    justify-self: center;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+
+form button:hover{
+    color: #fff;
+    background-color: #122ea0;
+}
+
+.form-input-message{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 100%;
+}
+
+.form-input-message label{
+    font-size: 0.4em;
+    margin: 10px 0;
+}
+
+
+.form-input-email{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 100%;
+}
+
+
+.form-input-email label{
+    font-size: 0.4em;
+    margin: 10px 0;
+}
+
+#email{
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: 0px solid transparent;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+}
+
+
+
+#message{
+  height: 130px;
+  outline: none;
+  border: 0px solid transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  background-color: transparent;
+  resize: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .contacto h1{
+      font-size: 0.6em;
+  }
+
+  #email{
+    width: 100%;
+  }
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  nav.open {
+    right: 0;
+  }
+
+  nav a {
+    font-size: 1.5em;
+    color: #fff;
+  }
+
+ .caja-texto{
+   align-self: center;
+   width: 90%;
+   margin: 0;
+   margin-top: 50px;
+  margin-bottom: 100px;
+  }
+
+  .caja-texto h1{
+  font-size: 3em;
+  }
+
+  .servicios-intro{
+    max-width: 90%;
+  }
+
+  .grupo-form{
+    justify-content: center;
+  }
+}

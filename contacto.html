@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body id="cuerpoContacto">
+<header>
+    <div class="logo">GLOBAL</div>
+    <button class="menu-toggle" id="toggleBtn">
+      <span id="menu-icon">&#9776;</span>
+      <span id="close-icon" style="display: none;">&times;</span>
+    </button>
+    <nav id="menu">
+      <a href="/">Inicio</a>
+      <a href="/nosotros.html">Nosotros</a>
+      <a href="/servicios.html">Servicios</a>
+      <a href="/sectores.html" >Sectores</a>
+      <a href="/contacto.html"   class="activo">Contacto</a>
+    </nav>
+  </header>
+  <section class="contacto">
+      <h1>Contacto</h1>  
+      <form action="">
+            <div class="grupo-form">
+                <div class="form-input">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-input">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+            </div>
+            <div class="grupo-form">
+                <div class="form-input-email">
+                    <label for="name">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="grupo-form">
+                 <div class="form-input-message">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="4" required></textarea>
+                </div>
+            </div>
+
+          <button type="submit">Enviar</button>
+      </form>
+  </section>
+    
+</body>
+<script src="js/main.js"></script>
+</html>
